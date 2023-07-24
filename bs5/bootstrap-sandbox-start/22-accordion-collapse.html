@@ -12,11 +12,44 @@
       <h1 class="mb-5">Accordion & Collapse</h1>
 
       <!-- Accordion -->
-
+      <div id="myaccordion" class="accordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              Accordion 1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#myaccordion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis rem pariatur, et nihil quidem tempore repellat veniam vero qui at error aliquid dolor ex amet. Error illum voluptatibus est, distinctio explicabo totam ratione eos repellendus sunt, a porro qui ipsum esse illo repudiandae? Suscipit ab aut esse placeat commodi debitis?</div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              Accordion 2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myaccordion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis rem pariatur, et nihil quidem tempore repellat veniam vero qui at error aliquid dolor ex amet. Error illum voluptatibus est, distinctio explicabo totam ratione eos repellendus sunt, a porro qui ipsum esse illo repudiandae? Suscipit ab aut esse placeat commodi debitis?</div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              Accordion 3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myaccordion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis rem pariatur, et nihil quidem tempore repellat veniam vero qui at error aliquid dolor ex amet. Error illum voluptatibus est, distinctio explicabo totam ratione eos repellendus sunt, a porro qui ipsum esse illo repudiandae? Suscipit ab aut esse placeat commodi debitis?</div>
+        </div>
+      </div>
       <br /><br />
 
       <!-- Collapse -->
+      <div class="py-3">
+        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#mycontent">Toggle Content</button>
+      </div>
 
+      <div class="collapse" id="mycontent">
+        <div class="card">
+          <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nulla aut perspiciatis provident aperiam, quasi ipsam consectetur. Officiis minima repellat, nobis quisquam, error eligendi ipsa veniam mollitia a maxime ratione.</div>
+        </div>
+      </div>      
       <!-- Don't go past here -->
     </div>
     <div style="margin-top: 350px"></div>
