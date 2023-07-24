@@ -1,0 +1,17 @@
+{
+  "name": "bs5boiler",
+  "version": "1.0.0",
+  "description": "Starter template for Bootstrap Websites",
+  "main": "index.js",
+  "scripts": {
+    "sass:build": "sass --no-source-map scss:css",
+    "sass:watch": "sass --no-source-map --watch scss:css"
+  },
+  "author": "Fernando Linhares",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "bootstrap": "^5.3.0",
+    "sass": "^1.64.1"
+  }
+}
