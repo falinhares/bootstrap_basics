@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta charset="UTF-8" /> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="./images/logoapiceflow.png">
+    <link rel="apple-touch-icon" href="./images/logoapiceflow.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/logoapiceflow.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/logoapiceflow.png" />
+    <meta name="author" content="FALinhares" >
+    <meta name="date" content="2016-11-29T11:05:00-0300" >
+    <meta name="copyright" content="Forxon">
+    <meta name="keywords" content="Forxon BPMN Process Automation Contabilidade Online DF Brasil">
+    <meta name="description" content="Contabilidade online / presencial">
+    <meta property="og:title" content="Contabilidade online / presencial" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://apiceflow.com.br/automproc/" />
+    <meta property="og:image" content="https://apiceflow.com.br/automproc/images/logoapiceflow_vert.png" />
+    <meta content="text/html">
+    <meta charset="ISO-8859-1">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logoapiceflow_hor_branco.png" alt="Ápiceflow" width="130" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMainDropdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMainDropdown">
+          <ul class="navbar-nav ms-5 fs-7">
+            <li class="nav-item">
+              <a class="nav-link" href="./dashboard.php" title="Painel de controle"><i class="fa-solid fa-gauge"  style="display:inline"></i>&nbsp;Painel</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gears"></i> Processos</a>
+              <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="./visao_processo.php" title="Visualizar um processo">Ver processo do sistema</a></li>
+                <li><a class="dropdown-item" href="./bpmnmodeler.php" title="Criar novos processos">Desenhar processo</a></li>
+                <li><a class="dropdown-item" href="./visao_processos.php" title="Visualizar processos criados">Ver todos os processos</a></li>
+                <li><a class="dropdown-item" href="./prioridade.php" title="Tipos de prioridade de processos">Prioridades</a></li>
+                <li><a class="dropdown-item" href="./processo.php" title="Processos criados">Processos</a></li>
+                <li><a class="dropdown-item" href="./tipoelemento.php" title="Tipos de elemento">Tipos de elemento</a></li>
+                <li><a class="dropdown-item" href="./elemento.php" title="Elementos de processos">Elementos de processos</a></li>
+                <li><a class="dropdown-item" href="./email.php" title="Email associado a passo">Email associado a passo</a></li>
+                <li><a class="dropdown-item" href="./conexao.php" title="Conexões entre elementos">Conexões entre elementos</a></li>
+                <li><a class="dropdown-item" href="./tipovariavel.php" title="Tipos de variáveis">Tipos de variáveis</a></li>
+                <li><a class="dropdown-item" href="./variavel.php" title="Variáveis de processos">Variáveis</a></li>
+                <li><a class="dropdown-item" href="./formula.php" title="Fórmulas de cálculos">Fórmulas</a></li>
+                <li><a class="dropdown-item" href="./elementohasvariavel.php" title="Associação de variável a elemento de processo">Associação de variável a elemento</a></li>
+                <li><a class="dropdown-item" href="./instancia.php" title="Instâncias de processos">Instâncias de processos</a></li>
+                <li><a class="dropdown-item" href="./medicao.php" title="Medições de variáveis">Medições de variáveis</a></li>
+                <li><a class="dropdown-item" href="./comandossql.php" title="Comandos SQL de BDs externas">Comandos SQL</a></li>
+                <li><a class="dropdown-item" href="./edittemplate.php" title="Editar templates">Editar templates</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-magnifying-glass"></i> Procurar</a>
+              <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">por instância</a></li>
+                <li><a class="dropdown-item" href="#">por texto</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-flask"></i> Análises</a>
+              <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="./dashboard_processo.php" title="Dashboard de andamento de processos">Dashboard de processos</a></li>
+                <li><a class="dropdown-item" href="./stats_processos.php" title="Dashboard de estatísticas de processos">Estatísticas de processos</a></li>
+                <li><a class="dropdown-item" href="./quem_esta_aonde.php" title="Indica o que os funcionários estão trabalhando no momento">Quem está fazendo o quê</a></li>
+                <li><a class="dropdown-item" href="./quem_fez_oque.php" title="Indica o que os funcionários fizeram em um período de tempo">Quem gastou quanto tempo fazendo o quê</a></li>
+                <li><a class="dropdown-item" href="./usuarios_online.php" title="Lista usuários online no sistema">Usuários online</a></li>
+                <li><a class="dropdown-item" href="./acomp_clientes.php" title="Acompanhamento de clientes">Acompanhamento de clientes</a></li>   
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-a"></i> Ápiceflow</a>
+              <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+
+                <!-- sub-menu pessoal     -->
+                <li><h6 class="dropdown-header">Pessoal</h6></li>
+                <li><a class="dropdown-item" href="./ponto.php?id='.$idusuario.'" title="Acessar meus lançamentos de ponto do mês">Meu ponto</a></li>
+                <li><a class="dropdown-item" href="./ponto.php" title="Acessar lançamentos de ponto do mês">Gerenciar ponto</a></li>
+                <li><a class="dropdown-item" href="./table_dadosfunc.php" title="Dados extras dos funcionários">Dados de funcionários</a></li>
+                <li><a class="dropdown-item" href="./usuario.php" title="Gerenciar usuários do sistema">Usuários do sistema</a></li>
+                <li><a class="dropdown-item" href="./ranking_funcionarios.php" title="Ranking de funcionários">Ranking de funcionários</a></li>
+                <li><a class="dropdown-item" href="./dashboard_produtividade.php" title="Dashboard de produtividade">Produtividade de trabalho dos funcionários</a></li>            
+                <li><hr class="dropdown-divider"></li>
+
+                <!-- sub-menu fiscal -->
+                <li><h6 class="dropdown-header">Fiscal</h6></li>
+                <li><a class="dropdown-item" href="./analisenfes_v3.php" title="Analisador de XMLs de notas fiscais emitidas pelo software da Domínio">Analisador de NFEs (Domínio)</a></li>
+                <li><a class="dropdown-item" href="./analisecat52.php" title="Analisa arquivos CAT 52 de cupons fiscais">Analisador de CAT 52</a></li>
+                <li><hr class="dropdown-divider"></li>
+
+                <!-- sub-menu financeiro -->
+                <li><h6 class="dropdown-header">Financeiro</h6></li>
+                <li><a class="dropdown-item" href="./dashboard_produtividade.php" title="Dashboard de produtividade">Produtividade de trabalho dos funcionários</a></li>
+                <li><a class="dropdown-item" href="./custofixo.php" title="Custos fixos da empresa">Custos fixos</a></li>
+                <li><a class="dropdown-item" href="./custovariavel.php" title="Custos variáveis da empresa (salários)">Custos variáveis</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-store"></i> Clientes</a>
+              <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Novidades</a></li>
+                <li><a class="dropdown-item" href="#">Automação de processos</a></li>
+                <li><a class="dropdown-item" href="#">Guia de uso</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./manutencao.php" title="Painel de controle"><i class="fa-solid fa-screwdriver-wrench"></i> Manutenção</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-question"></i> Ajuda</a>
+              <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="./novidades.php">Novidades</a></li>
+                <li><a class="dropdown-item" href="./sobre.php">Automação de processos</a></li>
+                <li><a class="dropdown-item" href="./guia_uso.php">Guia de uso</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item ms-5">
+              <div><span class="fs-8 text-light">usuário: admin</span><br><a class="btn btn-danger fs-8 py-1 px-2">logout</a></div>
+            </li>
+
+          </ul>
+        </div>  
+      </div>
+    </nav>
+    
+    <!-- Navigation 2 -->
+    <div class="row-fluid">
+      <div class="bg-primary py-5">
+        <!-- para dar o espaço para o segundo menu aparecer e não ficar espaço em branco entre os menus quando muda tamanho da tela -->
+      </div>
+      <nav class="nav navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><i class="fa-solid fa-screwdriver-wrench"></i> Manutenção</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOtherDropdown">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarOtherDropdown">
+            <ul class="navbar-nav ms-5">
+              <li class="nav-item">
+                
+                <!-- sistema -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sistema</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+    
+                    <li><a class="dropdown-item" href="./alterar_usuario.php" title="Alterar dados do usuário, opções de notificação e senha">Alterar meus dados</a></li>
+    
+                    <li><a class="dropdown-item" href="./manutencao.php" title="Variáveis globais do sistema">Colocar sistema em manutenção</a></li>
+                    <li><a class="dropdown-item" href="./gerenciar_instancias.php" title="Gerenciar instâncias em aberto">Gerenciar instâncias</a></li>
+                    <li><a class="dropdown-item" href="./altera_instancia.php" title="Alterar passo atual de instância">Alterar instância</a></li>
+                    <li><a class="dropdown-item" href="./agendas_ativas.php" title="Mostrar agendas ativas para disparar instâncias de processos">Agendas ativas</a></li>
+                    <li><a class="dropdown-item" href="./consulta_log.php" title="Consulta o Log do sistma">Consultar Log</a></li>
+                    <li><a class="dropdown-item" href="./busca_sendpulse.php" title="Consulsa emails enviados pelo Sendpulse">Consulta Sendpulse</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    
+                    <li><h6 class="dropdown-header">Owncloud</h6></li>  
+                    <li><a class="dropdown-item" href="./navegaowncloud.php" title="Navegar pelos diretórios do owncloud">Navegar pelos arquivos da nuvem</a></li>
+    
+                  </ul>
+                </li>
+
+                <!-- usuários -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usuários</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item" href="./pergunta_usuario.php" title="Responder perguntas de usuários">Perguntas de usuários</a></li>
+                    <li><a class="dropdown-item" href="./escolheuseremulator.php" title="Para emular um usuário">Emular usuário</a></li>                        
+                    <li><a class="dropdown-item" href="./escolheclienteemulator.php" title="Para emular um cliente">Emular cliente</a></li>
+                    <li><a class="dropdown-item" href="./ausencia.php" title="Gerenciar ausência de usuários">Ausência de usuários</a></li>
+                    <li><a class="dropdown-item" href="./transfererespons.php" title="Transfere responsabilidade de instâncias em aberto de um funcionário a outro">Transfere responsabilidade</a></li>
+                    <li><a class="dropdown-item" href="./nivel.php" title="Gerenciar níveis de acesso ao sistema">Níveis de acesso</a></li>
+                    <li><a class="dropdown-item" href="./grupo.php" title="Gerenciar grupos de usuários do sistema">Grupos de usuários do sistema</a></li>
+                    <li><a class="dropdown-item" href="./usuario.php" title="Gerenciar usuários do sistema">Usuários do sistema</a></li>          
+                  </ul>
+                </li>    
+                
+                <!-- configurações -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Configurações</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item" href="./manut_registro.php" title="Manutenção dos registros de empresas novas">Registros de empresa</a></li>
+                    <li><a class="dropdown-item" href="./manut_contato.php" title="Manutenção dos contatos feitos">Contatos</a></li>
+                    <li><a class="dropdown-item" href="./calendario.php" title="Manutenção do calendário de trabalho">Calendário</a></li>
+                    <li><a class="dropdown-item" href="./pergunta.php" title="Manutenção perguntas e respostas frequentes do sistema">Perguntas e respostas frequentes do sistema</a></li>                        
+                    <li><a class="dropdown-item" href="./bdexterna.php" title="Manutenção de bases de dados externas">Bases de dados externas</a></li>
+                    <li><a class="dropdown-item" href="./tabelaexterna.php" title="Gerenciar tabelas de bases de dados externas">Tabelas de bases de dados externas</a></li>
+                  </ul>
+                </li>                  
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>  
+    </div>
+
+    <!-- footer -->
+    <footer class="border-top border-primary bg-dark text-white py-4 my-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <p>Ápiceflow é baseado no Swiss Process Automation (spa), um sistema SaaS (software vendido como serviço) de mapeamento e automação de processos feito inteiramente no Brasil utilizando HTML5, CSS3, PHP, Javascript e mySQL.</p>
+            <ul class="nav gap-3">
+              <li class="nav-item">
+                <a class="btn btn-warning" href="https://forxon.com.br" target="_blank" class="nav-link text-warning fw-semibold">Forxon</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5561996050040" target="_blank" class="nav-link btn btn-outline-light px-4 mx-4 fw-semibold">Atendimento</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 d-none d-md-block">
+            <p class="text-end fw-light">&copy; Ápiceflow <span id="year"></span></p>
+            <p class="text-sm-end fw-lighter">v2.0 build 20230729</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

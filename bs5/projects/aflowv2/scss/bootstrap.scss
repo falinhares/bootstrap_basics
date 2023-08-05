@@ -1,0 +1,60 @@
+// Font
+$font-family-sans-serif: 'Poppins', sans-serif;
+
+// Colors
+$primary: #09B2B2;
+$secondary: #808B96;
+$dark: #2b3041;
+$light: #f3f6f9;
+
+// Navbar
+$navbar-padding-y: 1rem;
+$navbar-dark-color: #ffffff;
+$navbar-dark-hover-color: #ffffff;
+$navbar-toggler-border-radius: 5px;
+
+// Spacers
+$spacer: 1rem !default;
+$spacers: (
+    0: 0,
+    1: $spacer * 0.25,
+    2: $spacer * 0.5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    6: $spacer * 6,
+    7: $spacer * 8,
+    8: $spacer * 12,
+) !default;
+
+//navbar
+$navbar-dark-active-color: var(--bs-warning);
+$navbar-dark-brand-color: #FFFFFF;
+$navbar-dark-brand-hover-color: #FFFFFF;
+
+// Font Sizes
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: $font-size-base*0.90,
+  8: $font-size-base*0.70,
+  9: $font-size-base*0.50,
+  10: $font-size-base*0.40
+) !default;
+
+$enable-negative-margins: true;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
